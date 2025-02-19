@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package matchmaking;
+
+option go_package = ".;api";
+
+service Matchmaking {
+  rpc Match(MatchRequest) returns (MatchResponse);
+}
+
+message MatchRequest {
+  string ID = 1;
+  int32 rating = 2;
+  int32 latency = 3;
+}
+
+message MatchResponse {}
