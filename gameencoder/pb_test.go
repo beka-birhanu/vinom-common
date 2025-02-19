@@ -3,7 +3,7 @@ package gamepb_test
 import (
 	"testing"
 
-	gamepb "github.com/beka-birhanu/vinom-game-encoder"
+	gamepb "github.com/beka-birhanu/vinom-common/gameencoder"
 	"github.com/google/uuid"
 )
 

@@ -1,7 +1,7 @@
 package gamepb
 
 import (
-	game_i "github.com/beka-birhanu/vinom-interfaces/game"
+	game_i "github.com/beka-birhanu/vinom-common/interfaces/game"
 	"google.golang.org/protobuf/proto"
 )
 

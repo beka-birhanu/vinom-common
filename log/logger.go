@@ -5,7 +5,7 @@ import (
 	"io"
 	"log"
 
-	general_i "github.com/beka-birhanu/vinom-interfaces/general"
+	general_i "github.com/beka-birhanu/vinom-common/interfaces/general"
 )
 
 const (
