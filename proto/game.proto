@@ -1,0 +1,44 @@
+syntax = "proto3";
+package pb;
+
+option go_package = ".;pb";
+
+message Cell {
+  bool north_wall = 1;
+  bool south_wall = 2;
+  bool east_wall = 3;  
+  bool west_wall = 4; 
+  int32 reward = 5;    
+}
+
+message Maze {
+  repeated Row grid = 1;     
+
+  message Row {
+    repeated Cell cells = 1; 
+  }
+}
+
+message Pos {
+  int32 row = 1;             
+  int32 col = 2;
+}
+
+message Player {
+  Pos pos = 1;
+  int32 reward = 2;          
+  string id = 3;             
+}
+
+message GameState {
+  int64 version = 1;       
+  Maze maze = 2;          
+  repeated Player players = 3;
+}
+
+
+message Action {
+  string id = 1;
+  string direction = 2;
+  Pos from = 3;
+}
