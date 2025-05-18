@@ -1,6 +1,6 @@
 package gamepb
 
-import game_i "github.com/beka-birhanu/vinom-interfaces/game"
+import game_i "github.com/beka-birhanu/vinom-common/interfaces/game"
 
 func cellFromInterface(cell game_i.Cell) *Cell {
 	return &Cell{
